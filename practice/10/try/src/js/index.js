@@ -53,7 +53,7 @@
     };
 
     // previousとnextのスライド発火時の挙動
-    function addEvent() {
+    function firingSlide() {
         elements.prev.on('click', function() {
             isTransitioning.prev = true;
             slidePrev();
@@ -84,5 +84,5 @@
 
 
     prependAllItems();
-    addEvent();
+    firingSlide();
 })()
